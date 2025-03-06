@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a43c5880fd.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-sharp fa-solid fa-xmark" onclick="closmenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+           
+        
+            <div class="header-text">
+                <p><span>Passionate</span> Software Developer</p>
+                <h1>Hi, I'm <span> Lakshmi Sahithi </span> <br>Engineering Graduate</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- -----------------About------------- -->
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sahithi</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function opentab(tabName) {
+            var tabContents = document.getElementsByClassName("tab-contents");
+            var tabLinks = document.getElementsByClassName("tab-links");
+
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active-tab");
+            }
+
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+            }
+
+            document.getElementById(tabName).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+</head>
+<body>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sahithi.jpeg" alt="Sahithi">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><i>My name is Lakshmi Sahithi, and I'm a Computer Science student from India. I am passionate about learning new technologies and developing software solutions. I specialize in Java Full Stack development and have been  done as  a trainee in this field for the two months. My goal is to become a professional programmer, and I'm working hard to make it happen.</i></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('internship')">Internship</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>TECHNICAL SKILLS</span><br>JAVA, HTML, CSS</li>
+                            <li><span>COMMUNICATION SKILLS</span><br>Public Speaking, Self Motivated, Positive Nature</li>
+                            <li><span>HOBBIES & INTERESTS</span><br>Editing, Listening to Music, Watching Movies</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="internship">
+                        <ul>
+                            <li><span>Two Months</span><br>Techwing - Java Full Stack</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Affiliated JNTU Kakinada</li>
+                            <li><span>2018-2020</span><br>Board Of Intermediate Education</li>
+                            <li><span>2017-2018</span><br>Board Of Secondary Education</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- Projects Section -------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Software-Based Timetable Creation Using Genetic Algorithm</h2>
+                    <p>It involves designing a program that can generate optimal schedules for tasks, events, or activities while considering various constraints and objectives.</p>
+                    <p>Genetic algorithms are a type of optimization algorithm inspired by natural selection, making them useful for solving complex problems.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>HealthyU</h2>
+                    <p>It is a website containing health-related information using HTML, CSS, Bootstrap, and Angular. The main goal is to create an interface between users and doctors while providing insights into different health problems and their home remedies.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+ 
+  <!-- ---------------------Contact--------------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> tatikondasahithi44@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9666581261</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sahithi-tatikonda-7a1992324" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <a href="images/LAKSHMI SAHITHI 2024 (4).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formsubmit.co/tatikondasahithi44@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Sahithi Tatikonda <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    function opentab(tabname) {
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+
+        document.getElementById(tabname).classList.add("active-tab");
+
+        // Add active class to clicked tab
+        for (var i = 0; i < tablinks.length; i++) {
+            if (tablinks[i].getAttribute("onClick").includes(tabname)) {
+                tablinks[i].classList.add("active-link");
+            }
+        }
+    }
+</script>
